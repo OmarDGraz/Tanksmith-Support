@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tanksmith</title>
+<meta name="description" content="Tanksmith — the offline reef tank logbook for serious reefers.">
+<style>
+  :root {
+    --bg: #0a131e;
+    --surface: #14202f;
+    --border: rgba(255,255,255,0.08);
+    --text: #f1f4f8;
+    --text-secondary: #a8b2bf;
+    --accent: #4dc7d8;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.55;
+    min-height: 100vh;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px 80px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  h1 {
+    font-size: 48px;
+    margin: 0 0 8px;
+    letter-spacing: -0.02em;
+  }
+  .tagline {
+    color: var(--text-secondary);
+    font-size: 18px;
+    margin: 0;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 40px;
+  }
+  a.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 22px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    color: var(--text);
+    text-decoration: none;
+    transition: border-color .15s, background .15s;
+  }
+  a.card:hover {
+    border-color: var(--accent);
+    background: #18283a;
+  }
+  a.card .label {
+    font-weight: 600;
+  }
+  a.card .arrow {
+    color: var(--accent);
+    font-size: 20px;
+  }
+  footer {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 13px;
+    margin-top: 64px;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Tanksmith</h1>
+    <p class="tagline">The offline reef tank logbook.</p>
+  </header>
+
+  <div class="links">
+    <a class="card" href="support.html">
+      <span class="label">Support</span>
+      <span class="arrow">→</span>
+    </a>
+    <a class="card" href="privacy.html">
+      <span class="label">Privacy Policy</span>
+      <span class="arrow">→</span>
+    </a>
+  </div>
+
+  <footer>
+    Made for reefers, by reefers.<br>
+    Contact: <a href="mailto:support@tanksmith.app">support@tanksmith.app</a>
+  </footer>
+</div>
+</body>
+</html>

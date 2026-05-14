@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tanksmith — Support</title>
+<meta name="description" content="Help and FAQs for Tanksmith, the offline reef tank logbook.">
+<style>
+  :root {
+    --bg: #0a131e;
+    --surface: #14202f;
+    --border: rgba(255,255,255,0.08);
+    --text: #f1f4f8;
+    --text-secondary: #a8b2bf;
+    --text-tertiary: #6c7785;
+    --accent: #4dc7d8;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+  nav {
+    margin-bottom: 32px;
+  }
+  nav a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 36px;
+    margin: 0 0 8px;
+    letter-spacing: -0.02em;
+  }
+  .lede {
+    color: var(--text-secondary);
+    font-size: 17px;
+    margin: 0 0 40px;
+  }
+  h2 {
+    font-size: 22px;
+    margin: 48px 0 12px;
+    letter-spacing: -0.01em;
+  }
+  h3 {
+    font-size: 17px;
+    margin: 24px 0 6px;
+    color: var(--text);
+  }
+  p, ul, ol { color: var(--text-secondary); margin: 8px 0; }
+  ul, ol { padding-left: 22px; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin: 16px 0;
+  }
+  .card h3 { margin-top: 0; }
+  .contact {
+    margin-top: 48px;
+    padding: 22px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    text-align: center;
+  }
+  .contact a {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  footer {
+    text-align: center;
+    color: var(--text-tertiary);
+    font-size: 12px;
+    margin-top: 64px;
+  }
+  code {
+    background: rgba(255,255,255,0.06);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.92em;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <nav><a href="index.html">← Tanksmith</a></nav>
+
+  <h1>Support</h1>
+  <p class="lede">Quick answers and how-tos for Tanksmith. If you don't find what you need, write to us — we read every email.</p>
+
+  <h2>Getting started</h2>
+
+  <div class="card">
+    <h3>How do I add my first tank?</h3>
+    <p>Open Tanksmith, tap the <strong>+</strong> button on the Tanks tab, give your tank a name (Display, Frag, QT…), set the volume in gallons, and pick a type that matches your tank's purpose: Mixed Reef, SPS-Dominant, LPS-Dominant, Softie, FOWLR, or Quarantine. The tank type controls which target bands appear on parameter charts.</p>
+  </div>
+
+  <div class="card">
+    <h3>How do I log a parameter reading?</h3>
+    <p>From a tank's detail screen, tap <strong>Log</strong> in the top-right. Choose the parameter, type or step the value, optionally add a note (e.g. "Salifert lot AK24-09"), and Save. The new reading appears on the chart immediately, color-coded green if in the target band or red if outside.</p>
+  </div>
+
+  <div class="card">
+    <h3>How does the dosing recommendation work?</h3>
+    <p>From any tank, tap <strong>Dosing</strong>. Pick your dosing recipe (Randy Recipe #1, BRS 2-Part, ESV B-Ionic, Aquaforest 1+/2+, Tropic Marin All-For-Reef, or Red Sea A/B/C). Tanksmith fits a linear regression across your last 7, 14, or 30 days of readings to compute the actual consumption rate, then converts that into mL/day for the recipe and tank volume you specified. Confidence is shown — high, medium, or low — based on how many readings and how clean the trend is. Calibrate from there: if your alk drifts up over time, reduce the dose; if it drifts down, increase.</p>
+  </div>
+
+  <h2>Coral photo timeline</h2>
+
+  <div class="card">
+    <h3>How do I add growth photos to a coral?</h3>
+    <p>From a tank's Livestock list, tap a coral. On its detail screen, tap <strong>+</strong> and choose <strong>Add photo</strong>. iOS will ask for Photos access the first time. Photos are downscaled to 1400px and stored on your device only.</p>
+  </div>
+
+  <div class="card">
+    <h3>How do I compare two photos side by side?</h3>
+    <p>On a coral's detail screen, tap any two photos in the timeline. A <strong>Compare</strong> button appears at the top — tap it to see them side by side. Useful for tracking color shifts and growth over months.</p>
+  </div>
+
+  <div class="card">
+    <h3>How do I track frag lineage?</h3>
+    <p>From a coral's detail screen, tap <strong>+</strong> → <strong>Cut a frag</strong> to create a new Livestock entry that's automatically linked back to the mother colony. Or tap <strong>+</strong> → <strong>Record frag given/sold/traded</strong> to log a frag that left the system.</p>
+  </div>
+
+  <h2>Tank Report PDF</h2>
+
+  <div class="card">
+    <h3>How do I share my tank with a forum?</h3>
+    <p>From a tank's detail screen, tap <strong>Tank Report</strong>, choose 30/60/90 days, and tap <strong>Share Report</strong>. The PDF includes parameter trend charts, livestock roster, and equipment service status. Use the iOS share sheet to send it to Reddit, Reef2Reef, Messages, or save to Files.</p>
+  </div>
+
+  <h2>Inventory</h2>
+
+  <div class="card">
+    <h3>Where do I track my test kits?</h3>
+    <p>Settings → Test Kits. Add each kit by brand and parameter; opened-date defaults to today and expiry auto-suggests based on common reagent shelf life (Salifert 24mo, Hanna 18mo, Triton 12mo, etc.). Expired kits show in red so you don't trust a bad reading.</p>
+  </div>
+
+  <div class="card">
+    <h3>Why track salt batches?</h3>
+    <p>When a salt batch is reported bad on the forums, you'll want to know if you used it. Settings → Salt Batches lets you log each bucket by brand and lot, and mark which one is currently active.</p>
+  </div>
+
+  <h2>Equipment</h2>
+
+  <div class="card">
+    <h3>How do I track service intervals?</h3>
+    <p>Add equipment from a tank's detail screen, set the interval in days (sensible defaults are pre-filled per category — skimmer weekly, RODI membrane every 2 years, etc.). The Equipment tab shows everything sorted by urgency, with overdue items in red.</p>
+  </div>
+
+  <h2>Privacy & data</h2>
+
+  <div class="card">
+    <h3>Where is my data stored?</h3>
+    <p>On your device, in your iPhone or iPad's local storage. Tanksmith does not sync to iCloud, does not send anything to a server, and does not require an account. Read the full <a href="privacy.html">Privacy Policy</a>.</p>
+  </div>
+
+  <div class="card">
+    <h3>How do I move my data to a new phone?</h3>
+    <p>If you restore your new phone from an iCloud or Mac backup of the old one, Tanksmith's data comes along automatically — that's a system-level Apple backup, not Tanksmith uploading anything. A direct in-app export/import is on the roadmap.</p>
+  </div>
+
+  <div class="card">
+    <h3>Will Tanksmith ever require a subscription?</h3>
+    <p>No. Tanksmith is a one-time purchase. Future major versions may be paid upgrades, but the version you bought will continue to work with no recurring fees and no nag screens.</p>
+  </div>
+
+  <h2>Bugs & feature requests</h2>
+
+  <div class="card">
+    <h3>I found a bug.</h3>
+    <p>Email <a href="mailto:support@tanksmith.app">support@tanksmith.app</a> with: your iPhone/iPad model, iOS version, Tanksmith version, and what you were doing when it happened. A screenshot helps.</p>
+  </div>
+
+  <div class="card">
+    <h3>I have a feature idea.</h3>
+    <p>Send it. Reefer feedback shapes the roadmap.</p>
+  </div>
+
+  <div class="contact">
+    <a href="mailto:support@tanksmith.app">support@tanksmith.app</a>
+  </div>
+
+  <footer>
+    Tanksmith — Made for reefers, by reefers.
+  </footer>
+</div>
+</body>
+</html>
